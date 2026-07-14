@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png" sizes="any">
+
+  <title>SmartConso — Moins dépenser, mieux consommer</title>
+
+  <meta
+    name="description"
+    content="SmartConso analyse vos tickets de caisse pour vous aider à comprendre votre consommation, respecter vos objectifs et maîtriser votre budget."
+  >
+
+  <meta name="author" content="SmartConso">
+  <meta name="theme-color" content="#0f9f78">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="SmartConso">
+  <meta property="og:title" content="SmartConso — Moins dépenser, mieux consommer">
+  <meta
+    property="og:description"
+    content="Transformez vos tickets de caisse en informations utiles pour mieux comprendre et maîtriser votre consommation."
+  >
+  <meta property="og:url" content="https://smartconso.app/">
+
+  <link rel="canonical" href="https://smartconso.app/">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">
+    Aller au contenu principal
+  </a>
+
+  <header class="site-header" data-site-header>
+    <div class="container header-container">
+      <a class="brand" href="index.html" aria-label="Accueil SmartConso">
+        <span class="brand-mark" aria-hidden="true"><img
+            class="brand-logo"
+            src="assets/images/logo.png"
+            alt="SmartConso"
+        ></span>
+
+        <span class="brand-text">
+          <strong>SmartConso</strong>
+          <small>Moins dépenser, mieux consommer.</small>
+        </span>
+      </a>
+
+      <button
+        class="navigation-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        data-navigation-toggle
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        id="main-navigation"
+        class="main-navigation"
+        aria-label="Navigation principale"
+        data-main-navigation
+      >
+        <a href="#fonctionnement">Fonctionnement</a>
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#benefices">Pourquoi SmartConso ?</a>
+        <a href="#faq">FAQ</a>
+        <a class="button button-small" href="beta.html">
+          Rejoindre la bêta
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Votre assistant intelligent de consommation</p>
+
+          <h1>
+            Comprenez votre consommation.
+            <span>Maîtrisez vos objectifs.</span>
+          </h1>
+
+          <p class="hero-description">
+            SmartConso transforme vos tickets de caisse en informations utiles
+            pour suivre vos dépenses, respecter vos objectifs de consommation
+            et prendre de meilleures décisions.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="beta.html">
+              Rejoindre la bêta
+            </a>
+
+            <a class="button button-secondary" href="#fonctionnement">
+              Découvrir SmartConso
+            </a>
+          </div>
+
+          <p class="beta-note">
+            Bêta Android disponible prochainement. Version iPhone en préparation.
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-label="Aperçu de SmartConso">
+          <div class="phone-preview">
+            <div class="phone-top-bar"></div>
+
+            <div class="phone-screen">
+              <div class="preview-header">
+                <span>Bonjour</span>
+                <strong>Votre consommation</strong>
+              </div>
+
+              <article class="preview-score-card">
+                <span>Score budget</span>
+                <strong>82</strong>
+                <small>Objectif bien maîtrisé</small>
+              </article>
+
+              <article class="preview-card">
+                <div class="preview-card-header">
+                  <span>Dépenses du mois</span>
+                  <strong>438,50 €</strong>
+                </div>
+
+                <div class="preview-chart" aria-hidden="true">
+                  <span style="height: 45%"></span>
+                  <span style="height: 70%"></span>
+                  <span style="height: 55%"></span>
+                  <span style="height: 88%"></span>
+                  <span style="height: 64%"></span>
+                </div>
+              </article>
+
+              <article class="preview-card preview-categories">
+                <strong>Répartition</strong>
+
+                <div>
+                  <span>Fruits et légumes</span>
+                  <b>29 %</b>
+                </div>
+
+                <div>
+                  <span>Viandes et poissons</span>
+                  <b>21 %</b>
+                </div>
+
+                <div>
+                  <span>Boissons</span>
+                  <b>14 %</b>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="fonctionnement"
+      class="section section-soft"
+      aria-labelledby="fonctionnement-title"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Simple au quotidien</p>
+          <h2 id="fonctionnement-title">Comment fonctionne SmartConso ?</h2>
+          <p>
+            Quelques secondes suffisent pour transformer un ticket en données
+            utiles.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <h3>Photographiez votre ticket</h3>
+            <p>
+              Scannez ou téléversez simplement votre ticket de caisse.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <h3>SmartConso analyse vos achats</h3>
+            <p>
+              Les produits, montants, enseignes et catégories sont détectés
+              automatiquement.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <h3>Contrôlez les informations</h3>
+            <p>
+              Vérifiez et corrigez les éléments lorsque cela est nécessaire.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">4</span>
+            <h3>Suivez votre consommation</h3>
+            <p>
+              Visualisez vos dépenses, vos habitudes et l’avancement de vos
+              objectifs.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="fonctionnalites"
+      class="section"
+      aria-labelledby="fonctionnalites-title"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Une vision claire de vos achats</p>
+          <h2 id="fonctionnalites-title">
+            Tout ce qu’il faut pour mieux comprendre sa consommation
+          </h2>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">01</span>
+            <h3>Analyse des tickets</h3>
+            <p>
+              Extraction automatique de l’enseigne, de la date, du total et
+              des articles achetés.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">02</span>
+            <h3>Classement par catégorie</h3>
+            <p>
+              Vos achats sont organisés pour révéler la structure réelle de
+              votre consommation.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">03</span>
+            <h3>Objectifs personnalisés</h3>
+            <p>
+              Définissez votre budget global et sa répartition selon vos
+              priorités personnelles.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">04</span>
+            <h3>Tableaux de bord</h3>
+            <p>
+              Suivez vos dépenses par mois, catégorie et enseigne grâce à des
+              indicateurs lisibles.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">05</span>
+            <h3>Score budget</h3>
+            <p>
+              Mesurez rapidement votre progression et identifiez les écarts
+              importants.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">06</span>
+            <h3>Liste de courses</h3>
+            <p>
+              Préparez vos achats et organisez progressivement vos prochaines
+              courses.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="benefices"
+      class="section section-dark"
+      aria-labelledby="benefices-title"
+    >
+      <div class="container">
+        <div class="section-heading section-heading-light">
+          <p class="eyebrow">Pourquoi SmartConso ?</p>
+          <h2 id="benefices-title">
+            Une consommation plus simple et plus éclairée
+          </h2>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <span aria-hidden="true">€</span>
+            <h3>Moins dépenser</h3>
+            <p>
+              Identifiez où part votre budget et agissez sur les dépenses qui
+              comptent réellement.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <span aria-hidden="true">✓</span>
+            <h3>Mieux consommer</h3>
+            <p>
+              Comparez vos achats à la répartition que vous souhaitez
+              réellement respecter.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <span aria-hidden="true">⌁</span>
+            <h3>Gagner du temps demain</h3>
+            <p>
+              SmartConso évoluera vers la comparaison des enseignes,
+              l’optimisation du panier et la simplification des courses.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-preview">
+      <div class="container product-preview-grid">
+        <div>
+          <p class="eyebrow">Une application conçue pour le quotidien</p>
+
+          <h2>
+            Vos données deviennent enfin compréhensibles
+          </h2>
+
+          <p>
+            SmartConso présente vos achats sous une forme claire, afin que vous
+            puissiez identifier les tendances, suivre vos objectifs et décider
+            en connaissance de cause.
+          </p>
+
+          <ul class="check-list">
+            <li>Suivi mensuel des dépenses</li>
+            <li>Répartition par catégorie alimentaire</li>
+            <li>Analyse par enseigne</li>
+            <li>Budget personnalisable</li>
+            <li>Contrôle permanent de vos données</li>
+          </ul>
+        </div>
+
+        <div class="screenshots-placeholder">
+  <article class="screenshot-card screenshot-card-main">
+    <img
+      src="assets/images/screenshot_home.jpeg"
+      alt="Écran d’accueil SmartConso avec le score budget"
+      loading="lazy"
+    >
+
+    <div class="screenshot-caption">
+            <strong>Accueil et score budget</strong>
+        </div>
+        </article>
+
+        <article class="screenshot-card">
+            <img
+            src="assets/images/screenshot_analyse_cat.png"
+            alt="Écran SmartConso présentant l’analyse des dépenses par catégorie"
+            loading="lazy"
+            >
+
+            <div class="screenshot-caption">
+            <strong>Analyse par catégorie</strong>
+            </div>
+        </article>
+
+        <article class="screenshot-card">
+            <img
+            src="assets/images/screenshot_validation_ticket.png"
+            alt="Écran SmartConso de validation d’un ticket de caisse"
+            loading="lazy"
+            >
+
+            <div class="screenshot-caption">
+            <span>Capture SmartConso</span>
+            <strong>Validation du ticket</strong>
+            </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="faq"
+      class="section section-soft"
+      aria-labelledby="faq-title"
+    >
+      <div class="container faq-container">
+        <div class="section-heading">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">FAQ</h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>SmartConso est-il déjà disponible ?</summary>
+            <p>
+              SmartConso est actuellement en préparation pour une première
+              phase de bêta privée sur Android. Une version iPhone suivra.
+            </p>
+          </details>
+
+          <details>
+            <summary>Comment fonctionne l’analyse des tickets ?</summary>
+            <p>
+              L’application extrait les informations du ticket, classe les
+              achats et vous permet de vérifier les résultats avant leur
+              enregistrement.
+            </p>
+          </details>
+
+          <details>
+            <summary>Puis-je définir mes propres objectifs ?</summary>
+            <p>
+              Oui. Vous pouvez définir un budget global et répartir ce budget
+              entre plusieurs catégories selon vos priorités.
+            </p>
+          </details>
+
+          <details>
+            <summary>Mes données personnelles sont-elles protégées ?</summary>
+            <p>
+              La confidentialité et le contrôle des données font partie des
+              engagements fondamentaux de SmartConso.
+            </p>
+          </details>
+
+          <details>
+            <summary>Comment rejoindre la bêta ?</summary>
+            <p>
+              Remplissez le formulaire de candidature. Les participants seront
+              contactés progressivement selon les prochaines vagues de test.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="beta-callout">
+      <div class="container beta-callout-content">
+        <div>
+          <p class="eyebrow">Participez à l’aventure</p>
+          <h2>Devenez l’un des premiers bêta-testeurs SmartConso</h2>
+          <p>
+            Testez l’application en avant-première et contribuez directement
+            à son amélioration.
+          </p>
+        </div>
+
+        <a class="button button-light" href="beta.html">
+          Rejoindre la bêta
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="index.html">
+          <span class="brand-mark" aria-hidden="true"><img
+            class="brand-logo"
+            src="assets/images/logo.png"
+            alt="SmartConso"
+        ></span>
+
+          <span class="brand-text">
+            <strong>SmartConso</strong>
+            <small>Moins dépenser, mieux consommer.</small>
+          </span>
+        </a>
+
+        <p class="footer-description">
+          L’assistant intelligent qui transforme vos achats en décisions plus
+          éclairées.
+        </p>
+      </div>
+
+      <div>
+        <h2>Découvrir</h2>
+        <a href="#fonctionnement">Fonctionnement</a>
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#faq">FAQ</a>
+        <a href="beta.html">Rejoindre la bêta</a>
+      </div>
+
+      <div>
+        <h2>Informations</h2>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Politique de confidentialité</a>
+        <a href="terms.html">Conditions d’utilisation</a>
+        <a href="legal.html">Mentions légales</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>
+        © <span data-current-year></span> SmartConso. Tous droits réservés.
+      </p>
+
+      <p>Conçu en France.</p>
+    </div>
+  </footer>
+</body>
+</html>
