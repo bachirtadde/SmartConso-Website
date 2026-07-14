@@ -3,32 +3,174 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.png" sizes="any">
-
-  <title>SmartConso — Moins dépenser, mieux consommer</title>
-
-  <meta
-    name="description"
-    content="SmartConso analyse vos tickets de caisse pour vous aider à comprendre votre consommation, respecter vos objectifs et maîtriser votre budget."
-  >
-
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="SmartConso">
+  <meta name="application-name" content="SmartConso">
   <meta name="theme-color" content="#0f9f78">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>SmartConso – Analysez vos tickets et maîtrisez votre budget courses</title>
+  <meta name="description" content="Scannez vos tickets de caisse, analysez vos dépenses alimentaires et suivez votre budget courses avec l’application SmartConso.">
+  <link rel="canonical" href="https://smartconso.app/">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="SmartConso">
-  <meta property="og:title" content="SmartConso — Moins dépenser, mieux consommer">
-  <meta
-    property="og:description"
-    content="Transformez vos tickets de caisse en informations utiles pour mieux comprendre et maîtriser votre consommation."
-  >
+  <meta property="og:title" content="SmartConso – Maîtrisez votre budget courses">
+  <meta property="og:description" content="Analysez vos tickets de caisse et transformez vos achats en informations utiles pour mieux gérer votre budget alimentaire.">
   <meta property="og:url" content="https://smartconso.app/">
+  <meta property="og:image" content="https://smartconso.app/assets/images/logo.png">
+  <meta property="og:image:secure_url" content="https://smartconso.app/assets/images/logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="SmartConso – application de gestion du budget alimentaire">
 
-  <link rel="canonical" href="https://smartconso.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SmartConso – Maîtrisez votre budget courses">
+  <meta name="twitter:description" content="Analysez vos tickets de caisse et transformez vos achats en informations utiles pour mieux gérer votre budget alimentaire.">
+  <meta name="twitter:image" content="https://smartconso.app/assets/images/logo.png">
+  <meta name="twitter:image:alt" content="SmartConso – application de gestion du budget alimentaire">
+
+  <link rel="icon" href="favicon.png" sizes="any">
+  <link rel="icon" href="assets/icons/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="assets/css/styles.css">
 
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Corporation",
+      "@id": "https://smartconso.app/#corporation",
+      "name": "SmartConso",
+      "url": "https://smartconso.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://smartconso.app/#logo",
+        "url": "https://smartconso.app/assets/images/logo.png",
+        "contentUrl": "https://smartconso.app/assets/images/logo.png",
+        "width": 1536,
+        "height": 1024,
+        "caption": "SmartConso"
+      },
+      "email": "contact@smartconso.app"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://smartconso.app/#website",
+      "url": "https://smartconso.app/",
+      "name": "SmartConso",
+      "description": "Application d’analyse de tickets de caisse et de suivi du budget alimentaire.",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://smartconso.app/#corporation"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://smartconso.app/#softwareapplication",
+      "name": "SmartConso",
+      "url": "https://smartconso.app/",
+      "description": "Application mobile permettant de scanner des tickets de caisse, d’analyser les dépenses alimentaires et de suivre un budget courses.",
+      "applicationCategory": "FinanceApplication",
+      "applicationSubCategory": "Gestion du budget alimentaire",
+      "operatingSystem": "Android",
+      "inLanguage": "fr-FR",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@id": "https://smartconso.app/#corporation"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/PreOrder",
+        "url": "https://smartconso.app/beta.html"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://smartconso.app/#primaryimage",
+      "url": "https://smartconso.app/assets/images/logo.png",
+      "contentUrl": "https://smartconso.app/assets/images/logo.png",
+      "width": 1536,
+      "height": 1024,
+      "caption": "SmartConso – application de gestion du budget alimentaire"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://smartconso.app/#webpage",
+      "url": "https://smartconso.app/",
+      "name": "SmartConso – Analysez vos tickets et maîtrisez votre budget courses",
+      "description": "Scannez vos tickets de caisse, analysez vos dépenses alimentaires et suivez votre budget courses avec l’application SmartConso.",
+      "isPartOf": {
+        "@id": "https://smartconso.app/#website"
+      },
+      "about": {
+        "@id": "https://smartconso.app/#softwareapplication"
+      },
+      "publisher": {
+        "@id": "https://smartconso.app/#corporation"
+      },
+      "inLanguage": "fr-FR",
+      "primaryImageOfPage": {
+        "@id": "https://smartconso.app/#primaryimage"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://smartconso.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "SmartConso est-il déjà disponible ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SmartConso est actuellement en préparation pour une première phase de bêta privée sur Android. Une version iPhone suivra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment fonctionne l’analyse des tickets ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L’application extrait les informations du ticket, classe les achats et permet à l’utilisateur de vérifier les résultats avant leur enregistrement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je définir mes propres objectifs ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Vous pouvez définir un budget global et répartir ce budget entre plusieurs catégories selon vos priorités."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mes données personnelles sont-elles protégées ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La confidentialité et le contrôle des données font partie des engagements fondamentaux de SmartConso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment rejoindre la bêta ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Remplissez le formulaire de candidature. Les participants seront contactés progressivement selon les prochaines vagues de test."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
   <script src="assets/js/main.js" defer></script>
 </head>
 
