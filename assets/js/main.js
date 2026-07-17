@@ -12,6 +12,24 @@
   const formFeedback = document.querySelector("[data-form-feedback]");
   const contactForm = document.querySelector("[data-contact-form]");
 
+  const initializeContactSubject = () => {
+    if (!contactForm) return;
+    const requestedSubject = new URLSearchParams(window.location.search).get("subject");
+    if (!requestedSubject) return;
+
+    const normalized = requestedSubject.toLowerCase();
+    const categoryField = contactForm.querySelector('select[name="category"]');
+    const subjectField = contactForm.querySelector('input[name="subject"]');
+
+    if (categoryField && normalized.includes("suppression")) {
+      categoryField.value = "privacy";
+    }
+
+    if (subjectField && normalized.includes("suppression")) {
+      subjectField.value = "Demande de suppression de compte";
+    }
+  };
+
   const reducedMotionQuery = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   );
@@ -944,6 +962,7 @@
    * -------------------------------------------------------
    */
 
+  initializeContactSubject();
   setCurrentYear();
   updateHeaderState();
   initializeNavigation();
