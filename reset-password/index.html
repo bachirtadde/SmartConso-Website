@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/images/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/password-reset.css">
+
+  <title>Réinitialiser le mot de passe | SmartConso</title>
+  <meta name="description" content="Choisissez un nouveau mot de passe pour votre compte SmartConso.">
+  <meta name="robots" content="noindex, nofollow">
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/reset-password.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Accueil SmartConso">
+        <span class="brand-mark" aria-hidden="true">
+          <img class="brand-logo" src="../assets/images/logo.png" alt="">
+        </span>
+        <span class="brand-text">
+          <strong>SmartConso</strong>
+          <small>Moins dépenser, mieux consommer.</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content" class="password-page">
+    <section class="password-hero">
+      <div class="container password-shell password-shell-single">
+        <article class="password-card">
+          <div class="password-icon" aria-hidden="true">🛡️</div>
+          <p class="eyebrow">Sécurité du compte</p>
+          <h1>Choisir un nouveau mot de passe</h1>
+          <p class="password-intro">
+            Votre nouveau mot de passe doit comporter au moins 8 caractères.
+          </p>
+
+          <div
+            id="invalid-token-message"
+            class="form-message is-error"
+            role="alert"
+            hidden
+          >
+            Le lien de réinitialisation est absent, invalide ou incomplet.
+            Demandez un nouveau lien.
+          </div>
+
+          <form id="reset-password-form" novalidate>
+            <div class="form-field">
+              <label for="new-password">Nouveau mot de passe</label>
+              <div class="password-input-wrap">
+                <input
+                  id="new-password"
+                  name="new_password"
+                  type="password"
+                  autocomplete="new-password"
+                  minlength="8"
+                  required
+                >
+                <button
+                  class="password-toggle"
+                  type="button"
+                  data-toggle-password="new-password"
+                  aria-pressed="false"
+                >Afficher</button>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="confirm-password">Confirmer le mot de passe</label>
+              <div class="password-input-wrap">
+                <input
+                  id="confirm-password"
+                  name="confirm_password"
+                  type="password"
+                  autocomplete="new-password"
+                  minlength="8"
+                  required
+                >
+                <button
+                  class="password-toggle"
+                  type="button"
+                  data-toggle-password="confirm-password"
+                  aria-pressed="false"
+                >Afficher</button>
+              </div>
+            </div>
+
+            <div
+              id="reset-message"
+              class="form-message"
+              role="status"
+              aria-live="polite"
+              hidden
+            ></div>
+
+            <button id="reset-submit" class="primary-action" type="submit">
+              <span class="button-label">Modifier mon mot de passe</span>
+              <span class="button-spinner" aria-hidden="true"></span>
+            </button>
+          </form>
+
+          <div id="reset-success" class="reset-success" hidden>
+            <span aria-hidden="true">✓</span>
+            <h2>Mot de passe modifié</h2>
+            <p>
+              Vous pouvez maintenant utiliser votre nouveau mot de passe dans
+              l’application SmartConso.
+            </p>
+            <a class="button" href="../delete-account/">Revenir à la suppression du compte</a>
+          </div>
+
+          <p class="password-footer-link">
+            <a href="../forgot-password/">Demander un nouveau lien</a>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span data-current-year></span> SmartConso. Tous droits réservés.</p>
+      <p>Conçu par D-SID Group.</p>
+    </div>
+  </footer>
+</body>
+</html>
